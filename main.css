@@ -1,0 +1,689 @@
+body, ul, h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px; }
+  nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: red;
+    position: relative; }
+  nav ul {
+    display: flex;
+    height: 70px;
+    align-items: center; }
+    nav ul li {
+      list-style: none;
+      padding-left: 30px;
+      padding-right: 30px; }
+    nav ul:nth-child(2) .signin {
+      padding-right: 30px;
+      position: relative; }
+      nav ul:nth-child(2) .signin:after {
+        content: "";
+        width: 1px;
+        height: 33.1px;
+        background-color: black;
+        position: absolute;
+        right: 0px;
+        bottom: -6.4px; }
+    nav ul:nth-child(2) .signup {
+      padding-left: 30px;
+      padding-right: 40.6px; }
+    nav ul .active:after {
+      left: 0px;
+      bottom: -10.4px;
+      position: absolute;
+      content: "";
+      display: block;
+      height: 4.2px;
+      width: 100%;
+      background-color: red; }
+
+.btn {
+  text-decoration: none;
+  padding: 9px 33px;
+  border-radius: 5px; }
+
+.btn-primary {
+  color: white;
+  background: red; }
+
+.btn-secondary {
+  color: red;
+  background: white; }
+
+.btn-transparant {
+  color: white;
+  border: 1px solid white; }
+
+.btn-block {
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  text-align: center; }
+
+.head .image-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; }
+  .head .image-wrapper .black {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); }
+  .head .image-wrapper .text {
+    padding-left: 19%;
+    padding-right: 19%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    text-align: center; }
+    .head .image-wrapper .text .text-big {
+      font-size: 47px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; }
+    .head .image-wrapper .text p {
+      font-size: 26px;
+      margin-top: 49.1px; }
+  .head .image-wrapper .action {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72.3px;
+    justify-content: center; }
+    .head .image-wrapper .action a {
+      padding: 16px 58px;
+      margin-top: 10px; }
+      .head .image-wrapper .action a:nth-child(1) {
+        margin-right: 94.9px; }
+  .head .image-wrapper img {
+    width: 100%; }
+
+.container {
+  padding-left: 6%;
+  padding-right: 6%; }
+
+.title {
+  display: flex;
+  align-items: flex-start; }
+  .title .text {
+    font-size: 36px;
+    font-weight: bold;
+    position: relative; }
+    .title .text:after {
+      content: "";
+      bottom: -20px;
+      left: 0px;
+      position: absolute;
+      height: 8px;
+      width: 54px;
+      background-color: red; }
+  .title .icon {
+    width: 60px;
+    margin-top: 6px;
+    margin-left: 25px; }
+
+.card {
+  width: 360px;
+  height: 436.4px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; }
+  .card .image-container {
+    height: 196px;
+    width: 100%;
+    overflow: hidden; }
+  .card .content-container {
+    padding: 15px 18px; }
+    .card .content-container .card-name {
+      font-size: 11px; }
+    .card .content-container .card-title {
+      margin-top: 11px;
+      margin-bottom: 11px;
+      font-size: 20.8px;
+      font-weight: bold; }
+    .card .content-container .card-description {
+      font-size: 12.9px;
+      text-align: justify; }
+    .card .content-container .bar {
+      margin: 16px auto;
+      border-radius: 15px;
+      height: 18.6px;
+      width: 100%;
+      top: 16.7px;
+      background: #b3b3b3;
+      overflow: hidden; }
+      .card .content-container .bar .bar-percentages-1 {
+        width: 1%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-2 {
+        width: 2%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-3 {
+        width: 3%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-4 {
+        width: 4%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-5 {
+        width: 5%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-6 {
+        width: 6%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-7 {
+        width: 7%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-8 {
+        width: 8%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-9 {
+        width: 9%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-10 {
+        width: 10%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-11 {
+        width: 11%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-12 {
+        width: 12%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-13 {
+        width: 13%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-14 {
+        width: 14%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-15 {
+        width: 15%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-16 {
+        width: 16%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-17 {
+        width: 17%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-18 {
+        width: 18%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-19 {
+        width: 19%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-20 {
+        width: 20%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-21 {
+        width: 21%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-22 {
+        width: 22%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-23 {
+        width: 23%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-24 {
+        width: 24%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-25 {
+        width: 25%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-26 {
+        width: 26%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-27 {
+        width: 27%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-28 {
+        width: 28%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-29 {
+        width: 29%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-30 {
+        width: 30%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-31 {
+        width: 31%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-32 {
+        width: 32%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-33 {
+        width: 33%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-34 {
+        width: 34%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-35 {
+        width: 35%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-36 {
+        width: 36%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-37 {
+        width: 37%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-38 {
+        width: 38%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-39 {
+        width: 39%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-40 {
+        width: 40%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-41 {
+        width: 41%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-42 {
+        width: 42%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-43 {
+        width: 43%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-44 {
+        width: 44%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-45 {
+        width: 45%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-46 {
+        width: 46%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-47 {
+        width: 47%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-48 {
+        width: 48%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-49 {
+        width: 49%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-50 {
+        width: 50%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-51 {
+        width: 51%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-52 {
+        width: 52%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-53 {
+        width: 53%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-54 {
+        width: 54%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-55 {
+        width: 55%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-56 {
+        width: 56%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-57 {
+        width: 57%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-58 {
+        width: 58%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-59 {
+        width: 59%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-60 {
+        width: 60%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-61 {
+        width: 61%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-62 {
+        width: 62%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-63 {
+        width: 63%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-64 {
+        width: 64%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-65 {
+        width: 65%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-66 {
+        width: 66%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-67 {
+        width: 67%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-68 {
+        width: 68%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-69 {
+        width: 69%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-70 {
+        width: 70%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-71 {
+        width: 71%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-72 {
+        width: 72%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-73 {
+        width: 73%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-74 {
+        width: 74%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-75 {
+        width: 75%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-76 {
+        width: 76%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-77 {
+        width: 77%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-78 {
+        width: 78%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-79 {
+        width: 79%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-80 {
+        width: 80%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-81 {
+        width: 81%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-82 {
+        width: 82%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-83 {
+        width: 83%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-84 {
+        width: 84%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-85 {
+        width: 85%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-86 {
+        width: 86%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-87 {
+        width: 87%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-88 {
+        width: 88%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-89 {
+        width: 89%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-90 {
+        width: 90%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-91 {
+        width: 91%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-92 {
+        width: 92%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-93 {
+        width: 93%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-94 {
+        width: 94%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-95 {
+        width: 95%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-96 {
+        width: 96%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-97 {
+        width: 97%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-98 {
+        width: 98%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-99 {
+        width: 99%;
+        height: 100%;
+        background-color: red; }
+      .card .content-container .bar .bar-percentages-100 {
+        width: 100%;
+        height: 100%;
+        background-color: red; }
+    .card .content-container .card-footer {
+      display: flex;
+      justify-content: space-between;
+      position: relative; }
+      .card .content-container .card-footer .supporter {
+        font-size: 11.9px;
+        padding-left: 20px; }
+        .card .content-container .card-footer .supporter:before {
+          content: "";
+          display: inline-block;
+          height: 13px;
+          width: 13px;
+          left: 0px;
+          top: 1px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: red; }
+      .card .content-container .card-footer .date {
+        font-size: 11px;
+        color: #b3b3b3; }
+
+.content .text {
+  font-weight: bold;
+  margin-bottom: 60px; }
+
+.report-current {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6%; }
+  .report-current .boxes {
+    display: flex; }
+    .report-current .boxes .box {
+      position: relative;
+      margin-left: 30px;
+      width: 194px;
+      height: 194px;
+      border: 1px solid red;
+      border-radius: 5px;
+      color: #999; }
+      .report-current .boxes .box:nth-last-child(1) {
+        background-color: red;
+        color: white; }
+      .report-current .boxes .box .number {
+        height: 119px;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        font-size: 100px;
+        font-weight: bold; }
+      .report-current .boxes .box .text {
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        right: 19px; }
+
+.report-latest .card-container {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 60px; }
+
+.how-to {
+  height: 1099px;
+  position: relative;
+  padding-top: 6%;
+  background: red; }
+  .how-to .report-now {
+    position: absolute;
+    bottom: 100px; }
+    .how-to .report-now .title {
+      color: white; }
+      .how-to .report-now .title .text:after {
+        background-color: white; }
+  .how-to .how-to-card {
+    position: absolute;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+    background: white;
+    border-radius: 6.7px;
+    width: 445px;
+    box-sizing: border-box;
+    padding: 78px;
+    font-weight: bold;
+    text-align: center; }
+    .how-to .how-to-card .how-to-card-image {
+      width: 100%; }
+    .how-to .how-to-card .how-to-card-title {
+      font-size: 32px;
+      margin: 36px auto;
+      color: red; }
+    .how-to .how-to-card:after {
+      content: "";
+      display: block;
+      margin-top: 60px;
+      width: 64.4px;
+      margin-left: calc(50% - 32.2px);
+      height: 9.8px;
+      border-radius: 1.8px;
+      background-color: #ff002b; }
+  .how-to .how-to-card-1 {
+    top: -222.6px;
+    right: 222px; }
+  .how-to .how-to-card-3 {
+    top: 479px;
+    right: 89px; }
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: black; }
+
+.mt-5 {
+  margin-top: 60px; }
+
+.mb-5 {
+  margin-bottom: 60px; }
+
+/*# sourceMappingURL=main.css.map */
