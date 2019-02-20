@@ -15,7 +15,7 @@ nav {
     text-decoration: none;
     color: red;
     position: relative; }
-@media(max-width: 1076px) {
+@media(max-width: 1145px) {
   nav {
     padding-left: 6%;
     padding-right: 6%; } }
@@ -36,7 +36,7 @@ nav {
         border-radius: 5px;
         border: 2px solid red;
         position: relative; }
-@media(min-width: 1076px) {
+@media(min-width: 1145px) {
   nav ul:nth-child(1) .bars {
     display: none; } }
         nav ul:nth-child(1) .bars div {
@@ -53,7 +53,7 @@ nav {
           nav ul:nth-child(1) .bars div:nth-child(3) {
             top: 23px;
             left: 6px; }
-@media(max-width: 1076px) {
+@media(max-width: 1145px) {
   nav ul:nth-child(2), nav ul:nth-child(3) {
     display: none; } }
     nav ul:nth-child(3) .signin {
@@ -152,22 +152,32 @@ nav {
       letter-spacing: normal;
       text-align: left;
       color: #ffffff; }
+@media(max-width: 600px) {
+  .head .text .text-big {
+    text-align: center; } }
+@media(max-width: 1250px) {
+  .head .text .text-big {
+    font-size: 24px;
+    text-align: center; } }
     .head .text p {
       font-size: 26px;
       margin-top: 49.1px; }
 @media(max-width: 600px) {
   .head .text p {
     margin-top: 10px; } }
+@media(max-width: 1250px) {
+  .head .text p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center; } }
 @media(max-width: 600px) {
   .head .text {
     width: 80%; }
-    .head .text .text-big {
-      font-size: 24px; }
     .head .text p {
       font-size: 18px; } }
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
   .head .text .text-big {
-    font-size: 28px; }
+    font-size: 26px; }
   .head .text p {
     margin-top: 18px;
     font-size: 18px; }
@@ -189,6 +199,9 @@ nav {
 @media(max-width: 600px) {
   .head .text .action {
     margin-top: 30px; } }
+@media(max-width: 1250px) {
+  .head .text .action {
+    margin-top: 10px; } }
 .container {
   padding: 6%; }
 
@@ -760,6 +773,9 @@ nav {
 @media(max-width: 600px) {
   .report-latest .card-container {
     margin-bottom: 0px; } }
+@media(max-width: 1360px) {
+  .report-latest .card-container {
+    flex-direction: column; } }
 @media(max-width: 600px) {
   .how-to-title-1 {
     display: none; } }
