@@ -1067,7 +1067,8 @@ input.report-start-input, textarea.report-start-input {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-left: 30px; }
   .signin-signup-container .signin-signup-text {
     margin-left: 20px; }
     .signin-signup-container .signin-signup-text a {
