@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="main.css">
-<!-- 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		
 	</style>
@@ -148,28 +148,5 @@ Deskripsi</div>
 			<div class="report-start-button report-start-button-container-next">Selesai</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		var current = $('#media').offset().top
-		$(document).keyup(function(e) {
-			if (e.which === 13) {
-				if (this.activeElement.localName === 'body')
-					$('html').animate({scrollTop: current}, '500');
-			}
-		})
-		$(document).scroll(function() {
-		  var htmlTop = $(document).scrollTop()
-		  var a = $('#description').offset().top
-		  var b = $('#media').offset().top
-		  var c = $('#location').offset().top
-		  if(htmlTop > 70) {
-		  	if(htmlTop >= a -150 && htmlTop < b - 150) {
-			  	current = b
-			  } else if(htmlTop >= b -150) {
-			  	console.log('yuhuu')
-			  	current = c
-			  }
-		  }
-		});
-	</script>
 </body>
 </html>
