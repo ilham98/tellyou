@@ -1008,6 +1008,7 @@ input.report-start-input, textarea.report-start-input {
     margin-top: 120px; }
 @media(max-width: 900px) {
   .report-start-main-container .report-start-location-2 {
+    margin-top: 60px;
     flex-direction: column;
     width: 100vw;
     align-items: center; } }
@@ -1024,6 +1025,7 @@ input.report-start-input, textarea.report-start-input {
     margin-top: 125px; }
 @media(max-width: 900px) {
   .report-start-main-container .report-start-media .report-start-media-2 {
+    margin-top: 60px;
     flex-direction: column;
     width: 100vw;
     align-items: center; } }
