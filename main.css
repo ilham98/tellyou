@@ -150,7 +150,7 @@ nav {
       font-stretch: normal;
       line-height: 1.19;
       letter-spacing: normal;
-      text-align: left;
+      text-align: center;
       color: #ffffff; }
 @media(max-width: 600px) {
   .head .text .text-big {
@@ -768,11 +768,13 @@ nav {
 .report-latest .card-container {
   justify-content: flex-start;
   display: flex;
-  margin-bottom: 60px;
-  overflow: scroll; }
+  margin-bottom: 60px; }
 @media(max-width: 600px) {
   .report-latest .card-container {
     margin-bottom: 0px; } }
+@media(max-width: 1121px) {
+  .report-latest .card-container {
+    overflow-x: scroll; } }
 @media(max-width: 600px) {
   .how-to-title-1 {
     display: none; } }
