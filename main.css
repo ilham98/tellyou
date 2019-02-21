@@ -768,14 +768,11 @@ nav {
 .report-latest .card-container {
   justify-content: flex-start;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  overflow: scroll; }
 @media(max-width: 600px) {
   .report-latest .card-container {
     margin-bottom: 0px; } }
-@media(max-width: 800px) {
-  .report-latest .card-container {
-    flex-direction: column; } }
 @media(max-width: 600px) {
   .how-to-title-1 {
     display: none; } }
@@ -902,10 +899,176 @@ nav {
 @media(max-width: 600px) {
   .section-description {
     display: none; } }
-#description, #media, #location {
-  height: 100vh;
+@media(max-width: 900px) {
+  .report-start-container.container {
+    padding: 0; } }
+.report-start-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: red; }
+@media(max-width: 900px) {
+  .report-start-title {
+    font-size: 16px; } }
+.report-start-input {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100%;
+  box-sizing: border-box; }
+
+input.report-start-input, textarea.report-start-input {
+  font-family: Helvetica;
+  font-size: 16px; }
+
+.report-start-bar-container {
+  width: 12%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
+@media(max-width: 900px) {
+  .report-start-bar-container {
+    display: none; } }
+  .report-start-bar-container .report-start-bar-number {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    left: -12px;
+    top: calc(50% - 12px); }
+  .report-start-bar-container .report-start-bar-text {
+    left: 17px;
+    top: calc(50% - 12px);
+    position: absolute; }
+  .report-start-bar-container .report-start-bar {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background-color: red; }
+
+.report-start-description, .report-start-media, .report-start-location {
+  display: flex; }
+@media(max-width: 900px) {
+  .report-start-description, .report-start-media, .report-start-location {
+    width: 100vw; } }
+.report-start-content {
+  width: 88%;
+  align-items: flex-start; }
+
+.report-start-card {
+  box-sizing: border-box;
+  width: 40%;
+  margin-right: 10%;
+  padding: 20px 50px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+@media(max-width: 900px) {
+  .report-start-card {
+    width: 50%;
+    margin-right: 0%;
+    padding: 0px;
+    box-shadow: none; } }
+.report-start-main-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+@media(max-width: 900px) {
+  .report-start-main-container {
+    flex-direction: row;
+    overflow: scroll; } }
+  .report-start-main-container .report-start-description-2 {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 60px; }
+@media(max-width: 900px) {
+  .report-start-main-container .report-start-description-2 {
+    flex-direction: column;
+    width: 100vw;
+    height: calc(77vh - 120px);
+    align-items: center; } }
+    .report-start-main-container .report-start-description-2 .report-start-description-form {
+      width: 50%; }
+@media(max-width: 900px) {
+  .report-start-main-container .report-start-description-2 .report-start-description-form {
+    width: 80%;
+    margin-top: 35px; } }
+      .report-start-main-container .report-start-description-2 .report-start-description-form .report-start-description-form-1 {
+        margin-bottom: 15px; }
+  .report-start-main-container .report-start-location-2 {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 120px; }
+@media(max-width: 900px) {
+  .report-start-main-container .report-start-location-2 {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center; } }
+    .report-start-main-container .report-start-location-2 .report-start-location-form {
+      width: 50%; }
+@media(max-width: 900px) {
+  .report-start-main-container .report-start-location-2 .report-start-location-form {
+    width: 80%;
+    margin-top: 35px; } }
+      .report-start-main-container .report-start-location-2 .report-start-location-form .report-start-location-form-1 {
+        margin-bottom: 15px; }
+  .report-start-main-container .report-start-media .report-start-media-2 {
+    display: flex;
+    margin-top: 125px; }
+@media(max-width: 900px) {
+  .report-start-main-container .report-start-media .report-start-media-2 {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center; } }
+    .report-start-main-container .report-start-media .report-start-media-2 .report-start-media-form {
+      width: 50%;
+      display: flex;
+      justify-content: space-between; }
+@media(max-width: 900px) {
+  .report-start-main-container .report-start-media .report-start-media-2 .report-start-media-form {
+    width: 80%;
+    margin-top: 35px; } }
+      .report-start-main-container .report-start-media .report-start-media-2 .report-start-media-form .report-start-media-form-file {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute !important;
+        white-space: nowrap;
+        width: 1px; }
+
+.signin-signup-container {
+  display: flex;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  background-color: #eefffe; }
+@media(max-width: 900px) {
+  .signin-signup-container {
+    display: none; } }
+  .signin-signup-container .signin-signup-image-wrapper {
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .signin-signup-container .signin-signup-text {
+    margin-left: 20px; }
+    .signin-signup-container .signin-signup-text a {
+      color: #5d8af9;
+      text-decoration: none; }
 
 .report-progress {
   height: 300vh;
@@ -937,6 +1100,71 @@ nav {
   .report-progress .report-progress-3 {
     margin-top: 100vh; }
 
+.report-start-submit-button {
+  width: 100%;
+  margin-top: 50px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 9px;
+  border: none;
+  background: red;
+  color: white;
+  font-family: Helvetica; }
+@media(max-width: 900px) {
+  .report-start-submit-button {
+    display: none; } }
+.report-start-button-container {
+  height: 21vw;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 6%;
+  padding-left: 6%; }
+  .report-start-button-container .report-start-button {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    border-radius: 5px; }
+  .report-start-button-container .report-start-button-container-back {
+    width: 30%;
+    background-color: #cccccc; }
+  .report-start-button-container .report-start-button-container-next {
+    width: 60%;
+    background: red;
+    color: white;
+    margin-left: 10%;
+    box-shadow: 0 1px 10px 0 rgba(255, 0, 43, 0.6); }
+
+.report-start-mobile-tab {
+  box-sizing: border-box;
+  height: 74px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative; }
+  .report-start-mobile-tab .report-start-mobile-tab-options {
+    width: 80%;
+    position: absolute;
+    top: 10px;
+    display: flex; }
+    .report-start-mobile-tab .report-start-mobile-tab-options div {
+      width: 30%;
+      margin: 1%;
+      height: 5px;
+      background-color: white; }
+  .report-start-mobile-tab .report-start-mobile-tab-title {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold; }
+
+@media(min-width: 900px) {
+  .report-start-button-container, .report-start-mobile-tab {
+    display: none; } }
 .details {
   display: flex;
   flex-wrap: wrap; }
@@ -1043,12 +1271,13 @@ nav {
 .details-location-more {
   margin-bottom: 30px; }
   .details-location-more .details-location-more-container {
-    border: 1px solid black;
-    padding: 20px; }
+    padding: 20px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2); }
 @media(max-width: 600px) {
   .details-location-more .details-location-more-container {
     padding: 0;
-    border: none; } }
+    border: none;
+    box-shadow: none; } }
 .details-report-support {
   margin-top: 30px; }
 @media(max-width: 600px) {

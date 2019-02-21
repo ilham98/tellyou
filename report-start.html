@@ -3,15 +3,24 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<style type="text/css">
 		
 	</style>
 </head>
 <body>
 	<nav class="navbar">
+		<ul>
+			<li class="logo"><img src="icons/logo.svg"></li>
+			<li class="navbar-toggler">
+				<div class="bars">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</li>
+		</ul>
 		<ul>	
-			<li class="logo">Logo</li>
 			<li><a href="" class="active">Home</a></li>
 			<li><a href="">Cari Laporan</a></li>
 			<li><a href="">Rewards</a></li>
@@ -22,30 +31,121 @@
 			<li><a href="" class="btn btn-primary">Mulai Laporan</a></li>
 		</ul>
 	</nav>
-	<div class="container">
-		<div class="report-progress">
-			<div class="report-progress-description report-progress-1">
-				<div>1</div>
-				<div>Judul & Deskripsi</div>
+	<div class="container report-start-container">
+		<div class="report-start-mobile-tab">
+			<div class="report-start-mobile-tab-options">
+				<div class="report-start-mobile-tab-options-1"></div>
+				<div class="report-start-mobile-tab-options-2"></div>
+				<div class="report-start-mobile-tab-options-3"></div>
 			</div>
-			<div class="report-progress-description report-progress-2">
-				<div>1</div>
-				<div>Judul & Deskripsi</div>
+			<div class="report-start-mobile-tab-title	">Pilih Lokasi Laporan</div>
+		</div>
+		<div class="report-start-main-container">	
+			<div id="report-start-description" class="report-start-description">
+				<div class="report-start-bar-container">
+					<div class="report-start-bar">
+					</div>
+					<div class="report-start-bar-number">1</div>
+					<div class="report-start-bar-text">Judul & <br>
+Deskripsi</div>
+				</div>
+				<div class="report-start-content">
+					<div class="signin-signup-container">
+						<div class="signin-signup-image-wrapper">
+							<img src="images/image-1.jpg">
+						</div>
+						<div class="signin-signup-text">
+							<a href="">Masuk</a> / <a href="">Daftar</a> untuk melanjutkan laporan kamu</div>
+					</div>
+					<div class="report-start-description-2">
+						<div class="report-start-card">
+							<img src="images/how-to-report.svg">
+						</div>
+						<div class="report-start-description-form">
+							<div class="report-start-description-form-1">
+								<div class="report-start-title">
+									Tulis Judul Laporanmu
+								</div>
+								<input class="report-start-input">
+							</div>
+							<div class="report-start-description-form-2">
+								<div class="report-start-title">
+									Deskripsikan tempat laporanmu
+								</div>
+								<textarea class="report-start-input"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="report-progress-description report-progress-3">
-				<div>1</div>
-				<div>Judul & Deskripsi</div>
+
+			<div id="report-start-media" class="report-start-media">
+				<div class="report-start-bar-container">
+					<div class="report-start-bar">
+					</div>
+					<div class="report-start-bar-number">2</div>
+					<div class="report-start-bar-text">Foto / Video</div>
+				</div>
+				<div id="report-start-media" class="report-start-media-2 report-start-content">
+					<div class="report-start-card">
+						<img src="images/how-to-report.svg">
+					</div>
+					<div class="report-start-media-form">
+						<div>
+							<div class="report-start-title">
+								Upload Foto
+							</div>
+							<div>
+								input
+							</div>
+						</div>
+						<div>
+							<div class="report-start-title">
+								Upload Video
+							</div>
+							<div>
+								input
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+	
+			<div id="report-start-location" class="report-start-location">
+				<div class="report-start-bar-container">
+					<div class="report-start-bar">
+					</div>
+					<div class="report-start-bar-number">3</div>
+					<div class="report-start-bar-text">Judul & <br>
+Deskripsi</div>
+				</div>
+				<div class="report-start-content">
+					<div class="report-start-location-2">
+						<div class="report-start-card">
+							<img src="images/how-to-report.svg">
+						</div>
+						<div class="report-start-location-form">
+							<div class="report-start-location-form-1">
+								<div class="report-start-title">
+									Tulis Judul Laporanmu
+								</div>
+								<input class="report-start-input">
+							</div>
+							<div class="report-start-location-form-2">
+								<div class="report-start-title">
+									Deskripsikan tempat laporanmu
+								</div>
+								<textarea class="report-start-input"></textarea>
+							</div>
+						</div>
+					</div>
+					<input type="submit" class="report-start-submit-button" value="Selesai">
+				</div>
 			</div>
 		</div>
-		<div id="description">
-			dsf
-		</div>
-		<div id="media">
-			fdsf
-			<textarea></textarea>
-		</div>
-		<div id="location">
-			dfsf
+		<div class="report-start-button-container">
+			<div class="report-start-button report-start-button-container-back"><</div>
+			<div class="report-start-button report-start-button-container-next">Selesai</div>
 		</div>
 	</div>
 	<script type="text/javascript">
